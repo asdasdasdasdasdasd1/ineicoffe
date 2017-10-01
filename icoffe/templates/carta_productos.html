@@ -1,0 +1,11 @@
+{% extends 'layouts/website.html' %}
+{% block titulo %}Carta{% endblock %}
+{% block contenedor %}
+    <h2>{{ titulo }}</h2>
+    <ul>
+        {% for producto in productos %}
+            <li>{{ producto.nombre }}: {{ producto.precio }}</li>
+        {% endfor %}
+    </ul>
+    <p>Cuentanos tu experiencia: <a href="{% url 'contactenos:buzon' %}">Aquí</a></p>
+{% endblock %}

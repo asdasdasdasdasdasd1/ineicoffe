@@ -4,3 +4,4 @@
 icoffe/db.sqlite3
 icoffe/static/assets/
 icoffe/media/
+icoffe/settings/local.py
